@@ -22,7 +22,7 @@ const Sequelize = require('sequelize');
 
 sequelize = new Sequelize('neondb', 'neondb_owner', 'w1YFWaPIx0JZ', {
   host: 'ep-snowy-waterfall-a58edxgo.us-east-2.aws.neon.tech',
-  dialect: 'postgres',
+  dialect: 'pg',
   port: 5432,
   dialectOptions: {
       ssl: { rejectUnauthorized: false }
