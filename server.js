@@ -143,6 +143,10 @@ app.engine(
 
 app.set("view engine", ".hbs");
 
+//this is path for views
+app.set('views', path.join(__dirname, 'views'));
+
+
 app.get("/", (req, res) => {
   res.redirect("/about");
 });
