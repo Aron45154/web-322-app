@@ -58,6 +58,10 @@ const Item = sequelize.define(
       type: DataTypes.DOUBLE,
       allowNull: false,
     },
+    category: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
   {
     timestamps: false, // Disable automatic timestamps
