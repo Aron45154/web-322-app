@@ -19,7 +19,7 @@ const { Sequelize, DataTypes, Op } = require("sequelize");
 //   query: { raw: true }
 // });
 //const Sequelize = require('sequelize');
-
+const pg = require('pg');
 const sequelize = new Sequelize('neondb', 'neondb_owner', 'w1YFWaPIx0JZ', {
   host: 'ep-snowy-waterfall-a58edxgo.us-east-2.aws.neon.tech',
   dialect: 'postgres',
