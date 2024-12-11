@@ -1,14 +1,24 @@
 const { Sequelize, DataTypes, Op } = require("sequelize");
 
-var sequelize = new Sequelize("neondb", "neondb_owner", "w1YFWaPIx0JZ", {
-  host: "ep-snowy-waterfall-a58edxgo.us-east-2.aws.neon.tech",
-  dialect: "postgres",
-  port: 5432,
+// var sequelize = new Sequelize("neondb", "neondb_owner", "3abzxREu6LrJ", {
+//   host: "ep-small-mode-a5k35p9w.us-east-2.aws.neon.tech",
+//   dialect: "postgres",
+//   port: 5432,
+//   dialectOptions: {
+//     ssl: { rejectUnauthorized: false },
+//   },
+//   query: { raw: true },
+// });
+const { Sequelize } = require('sequelize');
+
+var sequelize = new Sequelize('postgresql://neondb_owner:w1YFWaPIx0JZ@ep-snowy-waterfall-a58edxgo.us-east-2.aws.neon.tech/neondb?sslmode=require', {
+  dialect: 'postgres',
   dialectOptions: {
-    ssl: { rejectUnauthorized: false },
+    ssl: { rejectUnauthorized: false }
   },
-  query: { raw: true },
+  query: { raw: true }
 });
+
 
 const Item = sequelize.define(
   "Item",
