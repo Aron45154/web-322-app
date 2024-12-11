@@ -1,6 +1,6 @@
 /********************************************************************************* 
 
-WEB322 – Assignment 05
+WEB322 – Assignment 0
 I declare that this assignment is my own work in accordance with Seneca
 Academic Policy.  No part of this assignment has been copied manually or 
 electronically from any other source (including 3rd party web sites) or 
@@ -11,8 +11,8 @@ the course.
 Name: Moe Thet Paing
 Student ID:  128784238
 Date:  December 11th 2024
-Cyclic Web App URL:  https://github.com/Aron45154/web-322-app-new
-GitHub Repository URL: https://web-322-app-new.vercel.app/about 
+Cyclic Web App URL: https://web-322-app-new.vercel.app/about 
+GitHub Repository URL:  https://github.com/Aron45154/web-322-app-new
 
 ********************************************************************************/
 const authData = require("./auth-service");
