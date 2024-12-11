@@ -11,8 +11,8 @@ the course.
 Name: Moe Thet Paing
 Student ID:  128784238
 Date:  December 11th 2024
-Cyclic Web App URL:  
-GitHub Repository URL:  
+Cyclic Web App URL:  https://github.com/Aron45154/web-322-app-new
+GitHub Repository URL: https://web-322-app-new.vercel.app/about 
 
 ********************************************************************************/
 const authData = require("./auth-service");
