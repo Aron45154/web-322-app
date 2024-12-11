@@ -20,7 +20,7 @@
 // });
 const Sequelize = require('sequelize');
 
-o	var sequelize = new Sequelize('neondb', 'neondb_owner', 'w1YFWaPIx0JZ', {
+sequelize = new Sequelize('neondb', 'neondb_owner', 'w1YFWaPIx0JZ', {
   host: 'ep-snowy-waterfall-a58edxgo.us-east-2.aws.neon.tech',
   dialect: 'postgres',
   port: 5432,
