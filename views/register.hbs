@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register</title>
+    <!-- Include your CSS files -->
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="container" style="padding-top: 90px;">
+      <!-- Error Message Display -->
+      {{#if errorMessage}}
+        <div class="alert alert-danger">
+          <strong>Error:</strong>
+          {{errorMessage}}
+        </div>
+      {{/if}}
+
+      <!-- Success Message Display -->
+      {{#if successMessage}}
+        <div class="alert alert-success">
+          <strong>Success:</strong>
+          {{successMessage}}
+        </div>
+        <a class="btn btn-success pull-right" href="/login">
+          &nbsp;&nbsp;&nbsp;Proceed to Log in&nbsp;&nbsp;&nbsp;
+        </a>
+        <br /><br /><br />
+      {{else}}
+
+        <!-- Registration Form -->
+        <form action="/register" method="POST">
+          <div class="mb-3">
+            <label for="userName" class="form-label">User Name</label>
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              class="form-control"
+              placeholder="User Name"
+              required
+              value="{{userName}}"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-control"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password2" class="form-label">Confirm Password</label>
+            <input
+              type="password"
+              name="password2"
+              id="password2"
+              class="form-control"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+      {{/if}}
+    </div>
+  </body>
+</html>

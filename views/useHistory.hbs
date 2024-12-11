@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>User History</title>
+    <!-- Include your CSS files -->
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="container" style="padding-top: 90px;">
+      <!-- Page Title -->
+      <h2>{{session.user.userName}} ({{session.user.email}}) History</h2>
+
+      <!-- Login History Table -->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Login Date/Time</th>
+            <th scope="col">Client Information</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each session.user.loginHistory}}
+            <tr>
+              <td>{{this.dateTime}}</td>
+              <td>{{this.userAgent}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
