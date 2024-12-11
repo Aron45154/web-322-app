@@ -11,13 +11,17 @@
 
                     <div class="col-8"><br/> <br/>
                         <div class="row">
+                        {{#each data.items}}
                             <div class="col-12">
                                 {{data.item.body}}
                                 <br/> <br/>
                                 <strong>Price:</strong> {{data.item.price}}<br />
                                 <strong>Category:</strong> {{data.item.category}}<br />
                                 <strong>Last Updated:</strong> {{data.item.postDate}}
+                                <br/><br/>
+
                             </div>
+                         {{/each}}
                         </div>
                     </div>
                 </div>
