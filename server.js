@@ -47,6 +47,12 @@ cloudinary.config({
 });
 
 
+//module export
+const itemData = require("./store-service");
+
+
+
+
 
 //  "upload" variable without any disk storages
 const upload = multer(); // no { storage: storage }
