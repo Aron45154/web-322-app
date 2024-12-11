@@ -38,14 +38,16 @@
     
     <aside class="col-md-3">
         <br /><br />
-         {{#if data.items}}///fixed
+         {{#if data.items}}
             <h4>Items</h4>
             <ul class="list-group">
+            
                 {{#each data.items}}
                     {{!-- /*<a href="/shop/{{id}}?category={{../viewingCategory}}" class="list-group-item">{{title}}</a>*/ --}}
-                    <a href="/shop/{{item.id}}" class="list-group-item">{{item.title}}</a>
+                    <a href="/shop/{{id}}" class="list-group-item">{{title}}</a>
 
                 {{/each}}
+            
             </ul>
         {{/if}}
 
