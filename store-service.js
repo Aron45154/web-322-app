@@ -9,7 +9,7 @@ const { Sequelize, DataTypes, Op } = require("sequelize");
 //   },
 //   query: { raw: true },
 // });
-const { Sequelize } = require('sequelize');
+//const { Sequelize } = require('sequelize');
 
 var sequelize = new Sequelize('postgresql://neondb_owner:w1YFWaPIx0JZ@ep-snowy-waterfall-a58edxgo.us-east-2.aws.neon.tech/neondb?sslmode=require', {
   dialect: 'postgres',
