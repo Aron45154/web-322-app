@@ -12,5 +12,17 @@
         "src": "/(.*)",
         "dest": "server.js"
       }
+    ],
+    "env": [
+      {
+        "PG_HOST": "ep-snowy-waterfall-a58edxgo.us-east-2.aws.neon.tech",
+        "PG_PORT": "5432",
+        "PG_USER": "neondb_owner",
+        "PG_PASSWORD": "w1YFWaPIx0JZ",
+        "PG_DATABASE": "neondb",
+        "PG_SSL_MODE": "require"
+    
+      }
     ]
+
   }
